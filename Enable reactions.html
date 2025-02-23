@@ -1,0 +1,4 @@
+function addReaction(messageId, reaction) {
+    const message = document.querySelector(`[data-id="${messageId}"]`);
+    message.dataset.reaction = reaction;
+}
