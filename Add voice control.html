@@ -1,0 +1,4 @@
+const recognition = new webkitSpeechRecognition();
+recognition.onresult = (e) => {
+    document.getElementById('userInput').value = e.results[0][0].transcript;
+};
